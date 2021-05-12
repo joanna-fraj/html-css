@@ -2,6 +2,9 @@
 
 :root {
     --primary-color:#047aed;
+    --secondary-color:#1c3fa8;
+    --dark-color:#002240;
+    --light-color:#f4f4f4f4;
 }
 
 * {
@@ -145,6 +148,52 @@ outline: none;
 .btn:hover {
     transform: scale(0.98);
 }
+/* Backgrounds & colored buttons */
+.bg-primary,
+.btn-primary {
+    background-color: var(--primary-color);
+    color:#fff;
+}
+.bg-secondary,
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color:#fff;
+}
+.bg-dark,
+.btn-dark {
+    background-color: var(--dark-color);
+    color:#fff;
+}
+
+.bg-primary a,
+.btn-primary a,
+.bg-secondary a,
+.btn-secondary a,
+.bg-dark a,
+.btn-dark a {
+    color:#fff;
+}
+.bg-light,
+.btn-light {
+    background-color: var(--light-color);
+    color:#333;
+}
+/* Text sizes */
+.lead {
+    font-size: 20px;
+}
+.sm {
+    font-size: 1rem;
+}
+.md {
+    font-size: 2rem;
+}
+.lg {
+    font-size: 3rem;
+}
+.xl {
+    font-size: 4rem;
+}
 .text-center {
     text-align:center;
 }
@@ -232,4 +281,49 @@ outline: none;
 }
 .p-5 {
     padding: 4rem;
+}
+.stats-heading {
+    max-width: 500px;
+    margin: auto;
+}
+.stats .grid h3 {
+    font-size: 35px;
+}
+.stats .grid p {
+    font-size: 20px;
+    font-weight: bold;
+}
+/* Cli */
+.cli .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.cli .grid > *:first-child {
+    grid-column: 1 / 2 span;
+    grid-row: 1 / 2 span;
+}
+/* Cloud */
+.cloud .grid {
+    grid-template-columns: 4fr 3fr;
+}
+/* Languages */
+.languages .flex {
+    flex-wrap: wrap;
+}
+.languages .card {
+    text-align: center;
+    margin: 18px 10px 40px;
+    transition: transform 0.2s ease-in;
+}
+.languages .card h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.languages .card:hover {
+    transform: translateY(-15px);
+}
+
+/* Footer */
+.footer .social a {
+    margin: 0 10px;
 }
