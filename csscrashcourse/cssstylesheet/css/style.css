@@ -18,7 +18,7 @@ a:active {
     color: green;
 }
 a:visited {
-    color:black;
+  
 }
 .container {
     width: 80%;
@@ -29,6 +29,10 @@ a:visited {
     color:#fff;
     padding:10px 15px;
     border:none;
+}
+.button:hover {
+    background-color: red;
+    color:#fff
 }
 .box-1 {
     background-color: #333;
