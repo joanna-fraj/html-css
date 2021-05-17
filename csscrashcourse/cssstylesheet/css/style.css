@@ -24,7 +24,7 @@ a:visited {
     width: 80%;
     margin: auto;
 }
-.button[type="submit"] {
+.button {
     background-color: #333;
     color:#fff;
     padding:10px 15px;
