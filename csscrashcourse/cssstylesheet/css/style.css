@@ -24,6 +24,12 @@ a:visited {
     width: 80%;
     margin: auto;
 }
+.button[type="submit"] {
+    background-color: #333;
+    color:#fff;
+    padding:10px 15px;
+    border:none;
+}
 .box-1 {
     background-color: #333;
     color: #fff;
@@ -79,4 +85,3 @@ margin: 20px 0;
     padding: 8px;
     width:100%;
 }
-.my-form input
