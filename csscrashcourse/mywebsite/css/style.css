@@ -51,4 +51,12 @@ body {
     padding: 0 30px;
     box-sizing: border-box;
 }
+#sidebar {
+    float:left;
+    width: 30%;
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+}
 
