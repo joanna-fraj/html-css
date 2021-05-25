@@ -115,14 +115,26 @@ header a:hover {
         width: 90px;
     }
 
-    /* Footer */
+/* Sidebar */
+aside#sidebar {
+    float: right;
+    width: 30%;
+    margin-top: 10px ;
+}
 
-    footer {
-        padding: 20px;
-        margin-top: 20px;
-        color: #fff;
-        background-color: #e8491d;
+/* Main-col */
+article#main-col {
+    float: left;
+    width: 65%;
+}
+
+    /* Footer */
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #e8491d;
     }
-    footer p {
-        text-align: center;
+footer p {
+    text-align: center;
     }
