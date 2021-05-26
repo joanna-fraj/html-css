@@ -128,15 +128,13 @@ aside#sidebar {
     width: 30%;
     margin-top: 10px ;
 }
-aside#sidebar .quote input {
+aside#sidebar .quote input, 
+aside#sidebar .quote textarea 
+{
     width: 90%;
     padding: 5px;
 }
-aside#sidebar .quote textarea {
-    width: 90%;
-    padding: 5px;
-}
-
+   
 /* Main-col */
 article#main-col {
     float: left;
@@ -161,4 +159,22 @@ footer {
     }
 footer p {
     text-align: center;
+    }
+
+    /* Media Quaries */
+
+    /* Tablets */
+    @media(max-width:768px) {
+        header #logo, 
+        header nav,
+        header nav li {
+            float: none;
+            text-align: center;
+            width: 100%;
+        } 
+
+        header {
+            padding-bottom: 20px;
+        }
+
     }
