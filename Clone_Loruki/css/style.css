@@ -2,6 +2,11 @@
 
 :root {
     --primary-color:#047aed;
+    --secondary-color: #1c3fa8;
+    --dark-color: #002240;
+    --light-color: #f4f4f4f4;
+    --success-color: #5cb85c;
+    --error-color: #d9534f;
 }
 
 * {
@@ -28,7 +33,6 @@ a {
 
 p {
     margin: 20px 0;
-    
 }
 
 
@@ -37,7 +41,9 @@ h1, h2 {
     line-height: 1.2;
     margin: 10px 0;
 }
-
+h3 {
+    font-size: 32px;
+}
 img {
     width: 100%;
 }
@@ -65,6 +71,7 @@ img {
 
 .container {
     max-width: 1100px;
+    margin: 0 auto;
     padding: 0 40px;
 }
 
@@ -91,6 +98,14 @@ img {
     gap: 30px;
     justify-content: center;
     align-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .showcase-1 {
@@ -128,7 +143,7 @@ img {
     height: 350px;
     width: 400px;
     z-index: 100;
-    justify-self: flex-end;
+    justify-self: center;
     animation: slideInFromRight 1s ease-in;
 }
 .showcase .form-text {
@@ -152,5 +167,33 @@ img {
     border-radius: 5px;
 }
 
+/* Stats */
 
+.stats {
+    padding-top: 100px;
+}
 
+.stats .stats-header {
+    font-size: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.stats .grid-3-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 32px 0;
+   
+} 
+
+.stats p.stat {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+.stats i {
+    font-size: 48px;
+}
