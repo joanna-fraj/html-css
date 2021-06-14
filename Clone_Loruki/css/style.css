@@ -22,6 +22,8 @@ ul {
 a {
     text-decoration: none;
     color:#333;
+    margin: 0 5px;
+    padding: 10px;
 }
 
 p {
@@ -29,18 +31,20 @@ p {
     
 }
 
+
+h1, h2 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
 img {
     width: 100%;
 }
 
-.btn.xl {
-    color: #fff;
-    background-color: var(--primary-color);
-    border: 1px solid;
-    border-radius: 5px;
-    padding: 10px 30px;
-}
+
 /* Navbar */
+
 .navbar{
     background-color: var(--primary-color);
     color: #fff;
@@ -54,9 +58,14 @@ img {
     color: #fff;
     padding: 10px;
 }
+
+.navbar h1 {
+    margin: 10px 0;
+}
+
 .container {
     max-width: 1100px;
-    margin: 0 auto;
+    padding: 0 40px;
 }
 
 .flex {
@@ -64,9 +73,84 @@ img {
     justify-content: space-between;
     align-items: center;
 }
+
+
+
+/* Showcase */
+
 .showcase {
+    position: relative;
+    height: 400px;
     background-color: var(--primary-color);
     color: #fff;
 }
-.grid {
-    
+
+.showcase .grid {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.showcase-1 {
+    animation: slideInFromLeft 1s ease-in;
+}
+.showcase-1 h1 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.showcase-1 p {
+    margin: 20px 0;    
+}
+
+.showcase-1 .btn.xl {
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin: 0;
+}
+.showcase .card {
+    background-color: #fff;
+    color: #333;
+    border-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
+}
+.showcase .card {
+    position: relative;
+    top: 60px;
+    height: 350px;
+    width: 400px;
+    z-index: 100;
+    justify-self: flex-end;
+    animation: slideInFromRight 1s ease-in;
+}
+.showcase .form-text {
+    margin: 30px 0;
+}
+.showcase .card input[type=text], 
+.showcase .card input[type=email]{
+    border: 0;
+    border-bottom: 1px solid #b4becb;
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+    color: #333;
+}
+.showcase .btn-card {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 30px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
