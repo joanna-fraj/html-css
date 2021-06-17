@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-image: url(./img/ballon.jpg);
+    background-position:center center;
+    background-size: cover;
+    height:100vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+a  {
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.container {
+    background-color: transparent;
+}
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 0 auto;
+}
+.header__nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+}
+
+.header__nav a  {
+    transition: 0.2s;
+    
+}
+
+.header__nav a:hover {
+    color: lightskyblue;
+    transform: scale(1.1);
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+
+}
+.btn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 10px 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    
+}
+
+.btn:hover {
+    background-color: lightskyblue;
+    transform: scale(1.1);
+    
+}
+
+
